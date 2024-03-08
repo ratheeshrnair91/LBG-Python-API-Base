@@ -55,7 +55,7 @@ class MyLbgApiTestCase(unittest.TestCase):
         """
         item = requests.post(BASE_URL + '/create', json = {'name': 'Vegetable', 'description': 'Leek', 'price': 0.7})
         response = requests.get(BASE_URL + '/read/2')
-        self.assertEqual(response.json(), {"_id": 2, 'name': 'Vegetable', 'description': 'Leek', 'price': 0.7})
+        self.assertEqual(response.json(), {"_id":2, 'name': 'Vegetable', 'description': 'Leek', 'price': 0.7})
     
     @classmethod
     def tearDownClass(cls):
