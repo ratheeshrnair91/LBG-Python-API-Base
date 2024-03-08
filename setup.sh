@@ -61,3 +61,21 @@ run_docker() {
     docker run -d -p 80:$PORT -e PORT=$PORT $DOCKER_IMAGE
 
 }
+
+# Main script execution
+
+echo "Starting build process..."
+
+sleep 3
+
+cleanup
+
+build_docker
+
+modify_app
+
+build_docker
+
+run_docker
+
+echo "Build process completed successfully."
