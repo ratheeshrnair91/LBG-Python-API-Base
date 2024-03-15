@@ -30,10 +30,10 @@ spec:
     metadata:
       labels:
         app: flask
-      spec:
-        containers:
-        - name: flask-container
-          image: eu.gcr.io/lbg-mea-17/ratheesh-lbg-python-api:6
-          imagePullPolicy: Always
-          ports:
-          - containerPort: 8080                  
+    spec:
+      containers:
+      - name: flask-container
+        image: eu.gcr.io/lbg-mea-17/ratheesh-lbg-python-api:6
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080                  
