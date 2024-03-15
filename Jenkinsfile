@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         GCR_CREDENTIALS_ID='Jenkins-ID'
-        IMAGE_NAME='eu.gcr.io/lbg-mea-17/ratheesh-lbg-python-api'
+        IMAGE_NAME='ratheesh-lbg-python-api'
         GCR_URL='eu.gcr.io/lbg-mea-17'
     }
     stages {
